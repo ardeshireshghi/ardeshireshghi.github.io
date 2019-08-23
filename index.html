@@ -76,6 +76,7 @@
     }
 
     svg {
+      width: 100vw;
       height: 85vh;
       max-width: 100%;
     }
@@ -162,16 +163,24 @@
     @media (orientation: landscape) {
       svg {
         height: 70vh;
+        width: 70vw;
       }
     }
 
     @media screen and (min-width: 1281px) {
       svg {
         height: 90vh;
+        width: 70vw;
       }
 
       .logo__text {
         font-size: 4.5rem;
+      }
+    }
+
+    @media screen and (min-width: 1900px) {
+      svg {
+        width: 50vw;
       }
     }
 

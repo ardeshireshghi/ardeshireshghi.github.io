@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <title>Ardeshir Eshghi - Software Engineer, Web enthusiast profile</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/91fb10e668.js"></script>
+
+  <style>/* Main styles */
+
+    @import url(https://fonts.googleapis.com/css?family=Satisfy&display=swap);
+
+    @-webkit-keyframes stroke {
+      100% {
+        stroke-dashoffset: 2500;
+      }
+    }
+    @keyframes stroke {
+      100% {
+        stroke-dashoffset: 2000;
+      }
+    }
+
+    @-webkit-keyframes fade-in {
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+           -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+             -o-transform: translateY(0);
+                transform: translateY(0);
+      }
+    }
+    @keyframes fade-in {
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+           -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+             -o-transform: translateY(0);
+                transform: translateY(0);
+      }
+    }
+
+    @-webkit-keyframes gradient {
+        0%{background-position:54% 0%}
+        50%{background-position:47% 100%}
+        100%{background-position:54% 0%}
+    }
+    @-moz-keyframes gradient {
+        0%{background-position:54% 0%}
+        50%{background-position:47% 100%}
+        100%{background-position:54% 0%}
+    }
+    @keyframes gradient {
+        0%{background-position:54% 0%}
+        50%{background-position:47% 100%}
+        100%{background-position:54% 0%}
+    }
+    /* Other styles */
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: #b95151;
+      background: linear-gradient(359deg, #c48282, #b95151, #e2a816);
+      background-size: 600% 600%;
+
+      -webkit-animation: gradient 30s ease infinite;
+      -moz-animation: gradient 30s ease infinite;
+      animation: gradient 30s ease infinite;
+      font: 1rem 'Satisfy', cursive;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    svg {
+      height: 90vh;
+      max-width: 100%;
+    }
+
+    h1 {
+      margin: 0;
+      font-weight: normal;
+      font-size: inherit;
+    }
+
+    .logo {
+      flex-basis: 90%;
+      flex-grow: 1;
+    }
+
+    .logo__text {
+      fill: none;
+      stroke-width: 3;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      -webkit-animation: stroke 9s 1 ease-in;
+      animation: stroke 9s 1 cubic-bezier(0.76, 0.02, 0.35, 0.99);
+      animation-direction: alternate;
+      animation-fill-mode: forwards;
+      stroke: #ffffff;
+      font-size: 5rem;
+      -webkit-animation-delay: -5.2s;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+
+    .grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .social-links__icon {
+      display: inline-block;
+      color: white;
+      font-size: 1.616rem;
+      opacity: 0;
+      -webkit-transform: translateY(10px);
+         -moz-transform: translateY(10px);
+          -ms-transform: translateY(10px);
+           -o-transform: translateY(10px);
+              transform: translateY(10px);
+      will-change: translate,opacity;
+      animation: fade-in 0.2s 1 ease-in;
+      animation-fill-mode: forwards;
+    }
+
+    .social-links__icon:not(:first-child) {
+      margin: 0 0.25rem;
+    }
+
+    .social-links__icon:nth-child(1) {
+      -webkit-animation-delay: 2s;
+    }
+
+    .social-links__icon:nth-child(2) {
+      -webkit-animation-delay: 2.1s;
+    }
+
+    .social-links__icon:nth-child(3) {
+      -webkit-animation-delay: 2.18s;
+    }
+
+    .social-links__icon:nth-child(4) {
+      -webkit-animation-delay: 2.23s;
+    }
+
+    @media screen and (min-width: 321px) {
+      .social-links__icon {
+        font-size: 2rem;
+      }
+    }
+
+    @media screen and (min-width: 481px) {
+      .social-links__icon {
+        font-size: 3rem;
+      }
+    }
+
+    @media (orientation: landscape) {
+      svg {
+        height: 70vh;
+      }
+    }
+
+    @media screen and (min-width: 1281px) {
+      svg {
+        height: 90vh;
+      }
+
+      .logo__text {
+        font-size: 4.5rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <h1 class="logo">
+      <svg viewBox="0 0 600 300">
+        <symbol id="s-text">
+          <text text-anchor="middle" x="50%" y="50%" dy=".35em">Ardeshir Eshghi</text>
+        </symbol>
+
+        <use class="logo__text" xlink:href="#s-text"></use>
+      </svg>
+    </h1>
+
+    <div class="social-links">
+      <a class="social-links__icon" href="https://www.github.com/ardeshireshghi" title="Github" alt="Github" role="link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+      <a class="social-links__icon" href="https://www.linkedin.com/in/ardeshir-eshghi-68936627" title="LinkedIn" alt="LinkedIn" role="link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+      <a class="social-links__icon" href="https://medium.com/@aeshghi" title="Medium Blog" alt="Medium Blog" role="link" target="_blank" rel="noopener noreferrer"><i class="fab fa-medium"></i></a>
+      <a class="social-links__icon" href="https://about.me/ardeshir.eshghi" title="About.me" alt="About.me" role="link" target="_blank" rel="noopener noreferrer"><i class="far fa-address-card"></i></a>
+    </div>
+  </div>
+</body>
+</html>

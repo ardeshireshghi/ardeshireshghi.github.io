@@ -1,209 +1,366 @@
 <!DOCTYPE html>
 <html lang="en" class="">
-<head>
-  <title>Ardeshir Eshghi - Software Engineer, Web enthusiast profile</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://kit.fontawesome.com/91fb10e668.js"></script>
+  <head>
+    <title>
+      Ardeshir Eshghi - Technical Leader and Software Engineer, Web enthusiast
+      profile
+    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/91fb10e668.js"></script>
 
-  <style>/* Main styles */
+    <style>
+      /* Main styles */
 
-    @import url(https://fonts.googleapis.com/css?family=Satisfy&display=swap);
+      @import url(https://fonts.googleapis.com/css?family=Satisfy&display=swap);
+      @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap");
 
-    @-webkit-keyframes stroke {
-      100% {
-        stroke-dashoffset: 2500;
+      @-webkit-keyframes stroke {
+        100% {
+          stroke-dashoffset: 2500;
+        }
       }
-    }
-    @keyframes stroke {
-      100% {
-        stroke-dashoffset: 2000;
+      @keyframes stroke {
+        100% {
+          stroke-dashoffset: 2000;
+        }
       }
-    }
 
-    @-webkit-keyframes fade-in {
-      100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-           -moz-transform: translateY(0);
-            -ms-transform: translateY(0);
-             -o-transform: translateY(0);
-                transform: translateY(0);
+      @-webkit-keyframes fade-in {
+        100% {
+          opacity: 1;
+          -webkit-transform: translateY(0);
+          -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+          -o-transform: translateY(0);
+          transform: translateY(0);
+        }
       }
-    }
-    @keyframes fade-in {
-      100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-           -moz-transform: translateY(0);
-            -ms-transform: translateY(0);
-             -o-transform: translateY(0);
-                transform: translateY(0);
+      @keyframes fade-in {
+        100% {
+          opacity: 1;
+          -webkit-transform: translateY(0);
+          -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+          -o-transform: translateY(0);
+          transform: translateY(0);
+        }
       }
-    }
 
-    @-webkit-keyframes gradient {
-      0%{background-position:14% 0%}
-      50%{background-position:87% 100%}
-      100%{background-position:14% 0%}
-    }
-    @-moz-keyframes gradient {
-      0%{background-position:14% 0%}
-      50%{background-position:87% 100%}
-      100%{background-position:14% 0%}
-    }
-    @keyframes gradient {
-      0%{background-position:14% 0%}
-      50%{background-position:87% 100%}
-      100%{background-position:14% 0%}
-    }
-    /* Other styles */
-    html, body {
-      height: 100%;
-    }
+      @keyframes fly-up {
+        0% {
+          transform: translateY(20px);
+        }
 
-    body {
-      background: #b95151;
-      background: linear-gradient(322deg, #19679a, #2f89c5, #169ba0);
-      background-size: 600% 600%;
-
-      -webkit-animation: gradient 30s ease infinite;
-      -moz-animation: gradient 30s ease infinite;
-      animation: gradient 30s ease infinite;
-      font: 1rem 'Satisfy', cursive;
-      margin: 0;
-      overflow: hidden;
-    }
-
-    svg {
-      width: 100vw;
-      height: 85vh;
-      max-width: 100%;
-    }
-
-    h1 {
-      margin: 0;
-      font-weight: normal;
-      font-size: inherit;
-    }
-
-    .logo {
-      flex-basis: 90%;
-      flex-grow: 1;
-    }
-
-    .logo__text {
-      fill: none;
-      stroke-width: 3;
-      stroke-dasharray: 1000;
-      stroke-dashoffset: 1000;
-      -webkit-animation: stroke 9s 1 cubic-bezier(0.76, 0.02, 0.35, 0.99);
-      animation: stroke 9s 1 cubic-bezier(0.76, 0.02, 0.35, 0.99);
-      animation-direction: alternate;
-      animation-fill-mode: forwards;
-      stroke: #ffffff;
-      font-size: 5rem;
-      -webkit-animation-delay: -4s;
-      animation-delay: -4s;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-
-    .grid {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .social-links__icon {
-      display: inline-block;
-      color: white;
-      font-size: 1.616rem;
-      opacity: 0;
-      -webkit-transform: translateY(10px);
-         -moz-transform: translateY(10px);
-          -ms-transform: translateY(10px);
-           -o-transform: translateY(10px);
-              transform: translateY(10px);
-      will-change: translate,opacity;
-      -webkit-animation: fade-in 0.2s 1 ease-in;
-      animation: fade-in 0.2s 1 ease-in;
-      animation-fill-mode: forwards;
-    }
-
-    .social-links__icon:not(:first-child) {
-      margin: 0 0.25rem;
-    }
-
-    .social-links__icon:nth-child(1) {
-      -webkit-animation-delay: 2.7s;
-      animation-delay: 2.7s;
-    }
-
-    .social-links__icon:nth-child(2) {
-      -webkit-animation-delay: 2.8s;
-      animation-delay: 2.8s;
-    }
-
-    .social-links__icon:nth-child(3) {
-      -webkit-animation-delay: 2.88s;
-      animation-delay: 2.88s;
-    }
-
-    .social-links__icon:nth-child(4) {
-      -webkit-animation-delay: 2.93s;
-      animation-delay: 2.93s;
-    }
-
-    @media screen and (min-width: 321px) {
-      .social-links__icon {
-        font-size: 2rem;
+        100% {
+          transform: translateY(0);
+        }
       }
-    }
 
-    @media (orientation: landscape) {
+      @-webkit-keyframes gradient {
+        0% {
+          background-position: 14% 0%;
+        }
+        50% {
+          background-position: 87% 100%;
+        }
+        100% {
+          background-position: 14% 0%;
+        }
+      }
+      @-moz-keyframes gradient {
+        0% {
+          background-position: 14% 0%;
+        }
+        50% {
+          background-position: 87% 100%;
+        }
+        100% {
+          background-position: 14% 0%;
+        }
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 14% 0%;
+        }
+        50% {
+          background-position: 87% 100%;
+        }
+        100% {
+          background-position: 14% 0%;
+        }
+      }
+
+      .typewriter {
+        font-family: "Source Code Pro", monospace;
+        font-size: 1.1rem;
+        font-weight: 600;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: 0.15em solid rgba(255, 255, 255, 0.555); /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: 0.1em; /* Adjust as needed */
+        animation: typing 3.5s steps(28, end) 4s,
+          blink-caret 0.75s step-end infinite;
+        animation-fill-mode: forwards;
+        width: 0;
+        max-width: 100%;
+        color: rgb(67 15 15 / 50%);
+      }
+
+      /* The typing effect */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 33ch;
+        }
+      }
+
+      @-moz-keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 33ch;
+        }
+      }
+
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: rgba(255, 255, 255, 0.555);
+        }
+      }
+
+      @-moz-keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: rgba(255, 255, 255, 0.555);
+        }
+      }
+
+      /* Other styles */
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        background: #b95151;
+        background: linear-gradient(322deg, #19679a, #2f89c5, #169ba0);
+        background-size: 600% 600%;
+
+        -webkit-animation: gradient 30s ease infinite;
+        -moz-animation: gradient 30s ease infinite;
+        animation: gradient 30s ease infinite;
+        font: 1rem "Satisfy", cursive;
+        margin: 0;
+        overflow: hidden;
+      }
+
       svg {
-        height: 70vh;
-        width: 70vw;
+        max-width: 100%;
       }
-    }
 
-    @media screen and (min-width: 1281px) {
-      svg {
-        height: 90vh;
-        width: 70vw;
+      h1 {
+        margin: 0;
+        font-weight: normal;
+        font-size: inherit;
       }
 
       .logo__text {
-        font-size: 4.5rem;
+        fill: none;
+        stroke-width: 3;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        -webkit-animation: stroke 9s 1 cubic-bezier(0.76, 0.02, 0.35, 0.99);
+        animation: stroke 9s 1 cubic-bezier(0.76, 0.02, 0.35, 0.99);
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        stroke: #ffffff;
+        font-size: 3.5rem;
+        -webkit-animation-delay: -4s;
+        animation-delay: -4s;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       }
-    }
 
-    @media screen and (min-width: 1900px) {
-      svg {
-        width: 50vw;
+      .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
       }
-    }
 
-  </style>
-</head>
-<body>
-  <div class="grid">
-    <h1 class="logo">
-      <svg viewBox="0 0 600 300">
-        <symbol id="s-text">
-          <text text-anchor="middle" x="50%" y="50%" dy=".35em">Ardeshir Eshghi</text>
-        </symbol>
+      .avatar {
+        max-width: 280px;
+        padding: 2rem 1rem 0 1rem;
+        box-sizing: border-box;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fade-in 0.7s ease 0.7s, fly-up 1.5s ease 0.5s;
+        animation-fill-mode: forwards;
+      }
 
-        <use class="logo__text" xlink:href="#s-text"></use>
-      </svg>
-    </h1>
+      .avatar__image {
+        max-width: 100%;
+        border-radius: 9999px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border: 5px solid rgb(255 255 255 / 13%);
+        box-sizing: border-box;
+      }
+      .social-links {
+        margin-top: auto;
+      }
+      .social-links__icon {
+        display: inline-block;
+        color: white;
+        font-size: 1.616rem;
+        opacity: 0;
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
+        transform: translateY(10px);
+        will-change: translate, opacity;
+        -webkit-animation: fade-in 0.2s 1 ease-in;
+        animation: fade-in 0.2s 1 ease-in;
+        animation-fill-mode: forwards;
+      }
 
-    <div class="social-links">
-      <a class="social-links__icon" href="https://www.github.com/ardeshireshghi" title="Github" alt="Github" role="link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-      <a class="social-links__icon" href="https://www.linkedin.com/in/ardeshir-eshghi-68936627" title="LinkedIn" alt="LinkedIn" role="link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-      <a class="social-links__icon" href="https://medium.com/@aeshghi" title="Medium Blog" alt="Medium Blog" role="link" target="_blank" rel="noopener noreferrer"><i class="fab fa-medium"></i></a>
-      <a class="social-links__icon" href="https://about.me/ardeshir.eshghi" title="About.me" alt="About.me" role="link" target="_blank" rel="noopener noreferrer"><i class="far fa-address-card"></i></a>
+      .social-links__icon:not(:first-child) {
+        margin: 0 0.25rem;
+      }
+
+      .social-links__icon:nth-child(1) {
+        animation-delay: 3.2s;
+      }
+
+      .social-links__icon:nth-child(2) {
+        animation-delay: 3.3s;
+      }
+
+      .social-links__icon:nth-child(3) {
+        animation-delay: 3.38s;
+      }
+
+      .social-links__icon:nth-child(4) {
+        animation-delay: 3.43s;
+      }
+
+      @media screen and (min-width: 321px) {
+        .social-links__icon {
+          font-size: 2rem;
+        }
+
+        .avatar {
+          max-width: min(320px, 100%);
+        }
+      }
+
+      @media (orientation: landscape) {
+        svg {
+          width: 70vw;
+        }
+      }
+
+      @media screen and (min-width: 1281px) {
+        svg {
+          width: 45vw;
+        }
+
+        .logo__text {
+          font-size: 3.6rem;
+        }
+
+        .avatar {
+          max-width: 500px;
+        }
+
+        .typewriter {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media screen and (min-width: 1900px) {
+        svg {
+          width: 50vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <section class="avatar">
+        <img class="avatar__image" src="./images/self-portrait-edited.png" />
+      </section>
+      <h1 class="logo">
+        <svg viewBox="0 0 400 100">
+          <text
+            class="logo__text"
+            id="s-text"
+            text-anchor="middle"
+            x="50%"
+            y="50%"
+            dy=".35em"
+          >
+            Ardeshir Eshghi
+          </text>
+        </svg>
+      </h1>
+      <div class="typewriter">Software Engineer Consultant</div>
+
+      <div class="social-links">
+        <a
+          class="social-links__icon"
+          href="https://www.github.com/ardeshireshghi"
+          title="Github"
+          alt="Github"
+          role="link"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          class="social-links__icon"
+          href="https://www.linkedin.com/in/ardeshir-eshghi-68936627"
+          title="LinkedIn"
+          alt="LinkedIn"
+          role="link"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          class="social-links__icon"
+          href="https://medium.com/@aeshghi"
+          title="Medium Blog"
+          alt="Medium Blog"
+          role="link"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-medium"></i
+        ></a>
+        <a
+          class="social-links__icon"
+          href="https://about.me/ardeshir.eshghi"
+          title="About.me"
+          alt="About.me"
+          role="link"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="far fa-address-card"></i
+        ></a>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

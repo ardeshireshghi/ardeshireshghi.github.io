@@ -1,0 +1,14 @@
+{
+  "name": "ardeshireshghi.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ardeshireshghi/ardeshireshghi.github.io.git",
+  "author": "Ardeshir Eshghi <ardi.eshghi@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "serve"
+  },
+  "devDependencies": {
+    "serve": "^14.1.2"
+  }
+}

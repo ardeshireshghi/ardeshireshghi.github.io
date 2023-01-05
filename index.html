@@ -305,16 +305,12 @@
       </section>
       <h1 class="logo">
         <svg viewBox="0 0 400 100">
-          <text
-            class="logo__text"
-            id="s-text"
-            text-anchor="middle"
-            x="50%"
-            y="50%"
-            dy=".35em"
-          >
-            Ardeshir Eshghi
-          </text>
+          <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+              Ardeshir Eshghi
+            </text>
+          </symbol>
+          <use class="logo__text" href="#s-text"></use>
         </svg>
       </h1>
       <div class="typewriter">Software Engineer Consultant</div>

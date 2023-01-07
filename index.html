@@ -195,7 +195,10 @@
       .logo {
         width: 100%;
         text-align: center;
-        min-height: 30vh;
+      }
+
+      .logo__svg {
+        height: 100px;
       }
 
       .grid {
@@ -270,21 +273,22 @@
         .avatar {
           max-width: min(320px, 100%);
         }
+
+        .logo__svg {
+          height: 140px;
+        }
       }
 
       @media (orientation: landscape) {
-        svg {
-          width: 70vw;
-        }
       }
 
       @media screen and (min-width: 1281px) {
-        svg {
-          width: 45vw;
-        }
-
         .logo__text {
           font-size: 3.6rem;
+        }
+
+        .logo__svg {
+          height: 200px;
         }
 
         .avatar {
@@ -295,12 +299,6 @@
           font-size: 1.5rem;
         }
       }
-
-      @media screen and (min-width: 1900px) {
-        svg {
-          width: 50vw;
-        }
-      }
     </style>
   </head>
   <body>
@@ -309,7 +307,7 @@
         <img class="avatar__image" src="./images/self-portrait-edited.png" />
       </section>
       <h1 class="logo">
-        <svg viewBox="0 0 400 100">
+        <svg class="logo__svg" viewBox="0 0 400 100">
           <symbol id="s-text">
             <text text-anchor="middle" x="50%" y="50%" dy=".35em">
               Ardeshir Eshghi

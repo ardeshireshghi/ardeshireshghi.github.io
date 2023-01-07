@@ -104,7 +104,7 @@
 
     .typewriter {
       font-family: "Source Code Pro", monospace;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 600;
       overflow: hidden;
       /* Ensures the content is not revealed until the animation */
@@ -178,7 +178,7 @@
 
     body {
       background: #b95151;
-      background: linear-gradient(322deg, #19679a, #2f89c5, #169ba0);
+      background: linear-gradient(322deg, #19679a, #2f89c5, #cb5b1a);
       background-size: 600% 600%;
 
       -webkit-animation: gradient 30s ease infinite;
@@ -228,6 +228,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       height: 100%;
     }
 
@@ -257,7 +258,7 @@
     .social-links__icon {
       display: inline-block;
       color: white;
-      font-size: 1.616rem;
+      font-size: 2rem;
       opacity: 0;
       -webkit-transform: translateY(10px);
       -moz-transform: translateY(10px);
@@ -291,10 +292,6 @@
     }
 
     @media screen and (min-width: 321px) {
-      .social-links__icon {
-        font-size: 2rem;
-      }
-
       .avatar {
         max-width: min(320px, 100%);
       }
@@ -302,25 +299,67 @@
       .logo__svg {
         height: 140px;
       }
+
+      .typewriter {
+        font-size: 1.15rem;
+      }
+
+      .social-links {
+        margin-top: 2.5rem;
+      }
     }
 
-    @media (orientation: landscape) {}
+    @media screen and (min-width: 769px) {
+      .social-links__icon {
+        font-size: 2.611rem;
+      }
 
-    @media screen and (min-width: 1281px) {
+      .typewriter {
+        font-size: 1.5rem;
+      }
+
+      .logo__svg {
+        height: 170px;
+      }
+
+      .avatar {
+        max-width: 450px;
+      }
+    }
+
+    @media (orientation: landscape) {
+      .logo__svg {
+        height: 140px;
+      }
+
       .logo__text {
         font-size: 3.6rem;
       }
 
-      .logo__svg {
-        height: 200px;
+      .typewriter {
+        font-size: 1.8rem;
       }
 
       .avatar {
         max-width: 500px;
       }
 
+
+    }
+
+    @media screen and (min-width: 1281px) {
+      .logo__text {
+        font-size: 3.6rem;
+      }
+
+
+
+      .avatar {
+        max-width: 500px;
+      }
+
       .typewriter {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
     }
   </style>

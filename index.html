@@ -46,17 +46,23 @@
         -moz-transform: translateY(0);
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
-        transform: translateY(0);
+        transform: translateX(0);
       }
     }
 
-    @keyframes fly-up {
+
+    @keyframes fly-down {
       0% {
-        transform: translateY(20px);
+        transform: translateY(-300px) scale(0);
+
+      }
+
+      60% {
+        transform: translateY(-200px) scale(0.2);
       }
 
       100% {
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
       }
     }
 
@@ -237,8 +243,8 @@
       padding: 2rem 1rem 0 1rem;
       box-sizing: border-box;
       opacity: 0;
-      transform: translateY(20px);
-      animation: fade-in 0.7s ease 0.7s, fly-up 1.5s ease 0.5s;
+      transform: translateY(-300px);
+      animation: fade-in 0.5s ease 1.2s, fly-down 1.5s ease 0.7s;
       animation-fill-mode: forwards;
     }
 
@@ -266,6 +272,10 @@
       -o-transform: translateY(10px);
       transform: translateY(10px);
       will-change: translate, opacity;
+
+    }
+
+    .social-links__animation {
       -webkit-animation: fade-in 0.2s 1 ease-in;
       animation: fade-in 0.2s 1 ease-in;
       animation-fill-mode: forwards;
@@ -380,7 +390,7 @@
         <use class="logo__text" href="#s-text"></use>
       </svg>
     </h1>
-    <div class="typewriter">Software Engineer Consultant</div>
+    <div class="typewriter js-typewriter">Software Engineer Consultant</div>
 
     <div class="social-links">
       <a class="social-links__icon" href="https://www.github.com/ardeshireshghi" title="Github" alt="Github" role="link"
@@ -393,6 +403,17 @@
         target="_blank" rel="noopener noreferrer"><i class="far fa-address-card"></i></a>
     </div>
   </div>
+
+  <script type="module">
+    import { animateSocialLinks } from '/js/social-links.js';
+
+
+    document.querySelector('.js-typewriter').addEventListener('animationend', (event) => {
+      if (event.animationName === 'typing') {
+        animateSocialLinks();
+      }
+    });
+  </script>
 </body>
 
 </html>
